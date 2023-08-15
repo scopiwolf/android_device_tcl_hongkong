@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from hongkong device
 $(call inherit-product, device/tcl/hongkong/device.mk)
 
-# Inherit some common Omni stuff.
+# Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, vendor/twrp/config/gsm.mk)
 
