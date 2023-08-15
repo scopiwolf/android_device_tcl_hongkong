@@ -31,3 +31,8 @@ PRODUCT_BRAND := TCL
 PRODUCT_MODEL := 20Y
 PRODUCT_MANUFACTURER := tcl
 PRODUCT_RELEASE_NAME := TCL 20Y
+
+
+# PORN: Set vendor patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
