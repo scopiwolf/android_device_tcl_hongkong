@@ -1,8 +1,3 @@
-#
-# Copyright (C) 2020 The Android Open Source Project
-# Copyright (C) 2020 The TWRP Open Source Project
-# Copyright (C) 2020 SebaUbuntu's TWRP device tree generator
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -26,13 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/tcl/hongkong/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hongkong
-PRODUCT_NAME := omni_hongkong
-PRODUCT_BRAND := alps
-PRODUCT_MODEL := alps
+PRODUCT_NAME := twrp_hongkong
+PRODUCT_BRAND := TCL
+PRODUCT_MODEL := 20Y
 PRODUCT_MANUFACTURER := tcl
-PRODUCT_RELEASE_NAME := alps alps
+PRODUCT_RELEASE_NAME := TCL 20Y
